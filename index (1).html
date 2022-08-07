@@ -5,16 +5,485 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-    <link rel="stylesheet" href="./index.css" />
+    <!-- <link rel="stylesheet" href="./index.css" /> -->
     <title>Document</title>
     <style>
-       
+       body{
+    background-color: #f2f6f9;
+}
+#container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* border: 1px solid black; */
+    padding: 18px;
+    box-sizing: border-box;
+   
+}
+#container>div:nth-child(1){
+    width:65%;
+    height: 1000px;
+    background-color: white;
+    /* border: 1px solid black; */
+}
+#container>div:nth-child(2){
+    width:33%;
+    height: 1000px;
+    margin-left: 2%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;            overflow-y: scroll;
+}
+
+
+/* **********************************form**************************************************** */
+
+.form>div:nth-child(1){
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    
+    border-bottom: 1px solid #929ba1;
+}
+
+.form>div:nth-child(1)>div{
+   padding: 10px;
+   box-sizing: border-box;
+   border-bottom: transparent;
+    /* border: 1px solid #929ba1; */
+}
+
+
+  
+.form>div:nth-child(1)>div:hover{
+    background-color:rgb(252, 221, 174) ;
+    border: 2px solid rgb(255, 153, 0);
+   border-left: none;
+   border-right: none;
+   border-top: none;
+}
+.form>div:nth-child(2){
+    padding: 15px;
+    margin-top: 2px;
+    box-sizing: border-box;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+}
+.form>div:nth-child(2) h2{
+  margin-top: 0;
+  
+}
+.form>div:nth-child(2)>div:nth-child(2){
+   
+   width: 100%;
+ 
+   height: 430px;
+   display: grid;
+   grid-template-columns: 23% 23% 23% 23%;
+   grid-gap: 2%;
+   grid-row-gap: 2%;
+   grid-template-rows: 80px 80px 80px 80px 50px;
+   grid-template-areas: 
+   "t t sub sub"
+   "ass ass det det"
+   "st end det det"
+   "rem rem det det"
+   "cancel apply det det"
+   ;
+}
+#details input{
+    height: 290px;
+    cursor: all-scroll;
+    text-align: left;
+}
+
+.form>div:nth-child(2)>div:nth-child(2)>div input{
+   margin-top: 2%;
+   height: 40px;
+   width: 97%;
+   border: 1px solid rgb(160, 215, 236);
+   outline: none;
+   border-color: rgb(160, 215, 236);
+   
+ 
+}
+ .type{
+    
+    grid-area: t;
+    /* border: 1px solid black; */
+
+
+
+
+
+}
+.subject{
+    grid-area: sub;
+    /* border: 1px solid black; */
+}
+.assign{
+    grid-area: ass;
+    /* border: 1px solid black; */
+}
+.details{
+    grid-area: det;
+    /* border: 1px solid black; */
+    
+}
+.start{
+    grid-area: st;
+    /* border: 1px solid black; */
+}
+.start input::-webkit-calendar-picker-indicator {
+   
+    background-color: rgb(255, 153, 0) ;
+    
+}
+
+.end input::-webkit-calendar-picker-indicator {
+    background-color: rgb(255, 153, 0) ;
+}
+.end{
+    grid-area: end;
+    /* border: 1px solid black; */
+}
+.cancel{
+    grid-area: cancel;
+    border: 1px solid black;
+}
+.apply{
+    grid-area: apply;
+    /* border: 1px solid black;  */
+}
+.remind{
+    grid-area: rem;
+    /* border: 1px solid black;  */
+}
+.remind input::-webkit-calendar-picker-indicator {
+    background-color: rgb(255, 153, 0) ;
+}
+.type select{
+    margin-top: 2%;
+   height: 42px;
+   width: 99%;
+   border: 1px solid rgb(160, 215, 236);
+
+
+}
+
+.cancel button{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: none;
+    font-weight: bold;
+}
+.apply{
+border: none;
+}
+.apply button{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: rgb(255, 153, 0);
+    border: 1px solid rgb(255, 153, 0);
+    font-weight: bold;
+}
+
+.table{
+    padding: 15px;
+    box-sizing: border-box;
+    height: 400px;
+   overflow-y: scroll;
+}
+
+.main_div{
+    width: 100%;
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;            box-sizing: border-box;
+    height: 130px;
+    display: flex;
+    margin-top: 15px;
+}
+.div1 {
+  /* border: 1px solid red; */
+    height: 80%;
+    width: 20%;
+    padding: 15px;
+    box-sizing: border-box;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    
+    margin-right: 4%;
+    color: cornflowerblue;
+}
+.div2 {
+    /* border: 1px solid red; */
+    height: 90%;
+    width: 75%;
+    
+}
+.div2 p {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 20px;
+  
+}
+.div2 span:nth-child(3){
+    margin-left: 4px;
+    color: darkgoldenrod;
+    font-weight: bold;
+}
+.div2 span:nth-child(5){
+    margin-right: 18px;
+    
+}
+.bi-check-circle-fill{
+    color: green;
+}
+.sorting_div select{
+    margin-top: 2%;
+   height: 42px;
+   width: 99%;
+}
+
+/*  */
+/* ******************************************************table************************************************************* */
+
+#customers {
+font-family: Arial, Helvetica, sans-serif;
+border-collapse: collapse;
+width: 100%;
+margin-top: 20px;
+}
+
+#customers td, #customers th {
+border: 1px solid #ddd;
+padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: white;
+color: black;
+}
+
+
+
+
+/* *********************************media query************************************************** */
+
+@media only screen and (max-width: 600px) {
+body{
+margin: auto;
+}
+#container{
+    /* width: auto; */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+
+} 
+.form>div:nth-child(1){
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+   grid-gap: 8px;
+    padding: 12px;
+    
+    border: 1px solid #929ba1;
+}
+
+.form>div:nth-child(1)>div{
+   padding: 8px;
+   text-align: center;
+   align-items: center;
+   box-sizing: border-box;
+    border: 1px solid #929ba1;
+}   
+
+.form>div:nth-child(1)>div:hover{
+   background-color: rgba(199, 168, 68, 0.932);
+}   
+
+label {
+font-size: 12px;        
+}
+.form>div:nth-child(2){
+    padding: 12px;
+    height: 400px;
+    box-sizing: border-box;
+}
+
+.form>div:nth-child(2)>div:nth-child(2)>div input{
+   margin-top: 2%;
+   height: 25px;
+   width: 95%;
+   
+   outline: none;
+   
+ 
+}
+.form>div:nth-child(2)>div:nth-child(2){
+   
+   width: 100%;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;           height: 280px;
+   display: grid;
+   padding: 15px;
+   box-sizing: border-box;
+   grid-template-columns: 23% 23% 23% 23%;
+   grid-gap: 10px;
+   grid-row-gap: 4%;
+   grid-template-rows: 50px 50px 40px 50px 30px;
+   grid-template-areas: 
+   "t t sub sub"
+   "ass ass det det"
+   "st end det det"
+   "rem rem det det"
+   "cancel apply det det"
+   ;
+}
+#details input{
+    height: 173px;
+    cursor: all-scroll;
+    text-align: left;
+}
+.form>div:nth-child(2){
+    padding: 12px;
+    height: 350px;
+    box-sizing: border-box;
+}
+
+.table{
+    height:auto
+}
+
+#container>div:nth-child(1){
+    width:100%;
+    height: auto;
+    /* border: 1px solid black; */
+}
+
+#container>div:nth-child(2){
+    width:96%;
+    height: auto;
+    margin-top: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;            overflow-y: scroll;
+    margin-left: -1px;
+}
+
+.main_div{
+    width: 100%;
+    padding: 2px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;            box-sizing: border-box;
+    height: 70px;
+    display: flex;
+    margin-top: 15px;
+}
+span{
+font-size: 13px;
+}
+
+.sorting_div select{
+   outline: none;
+}
+.type select{
+    margin-top: 2%;
+   height: 34px;
+   width: 99%;
+
+
+}
+
+
+
+
+
+#customers {
+font-family: Arial, Helvetica, sans-serif;
+border-collapse: collapse;
+width: 100%;
+
+}
+
+#customers td, #customers th {
+border: 1px solid #ddd;
+padding: 8px;
+font-size: 12px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+padding-top: 8px;
+padding-bottom: 8px;
+text-align: left;
+background-color: white;
+color: black;
+}
+
+
+
+}
+
+
+
+@media only screen and (max-width: 280px) {
+.form>div:nth-child(1){
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+   grid-gap: 4px;
+    padding: 12px;
+    font-size: 12px;
+    
+    border: 1px solid #929ba1;
+}
+}
+
+
+
+
+
+.top_div{
+display: flex;
+padding: 20px;
+border-bottom:1px solid #ddd; 
+}
+.top_div p{
+margin-top: 0;
+margin-bottom: 0;
+margin-left: 2.5%;
+padding: 10px;
+}
+.top_div p:hover{
+color: rgb(255, 153, 0);
+border-bottom: 1px solid rgb(255, 153, 0);
+}
 
     </style>
 </head>
 <body>
-    <script src="index.js">
-    </script>
+    
   <div class="top_div">
     <p>ACTIVITY</p>
     <p>INFORMATION</p>
@@ -117,5 +586,138 @@
             </div>
         </div>
     </div>
+    
 </body>
 </html>
+<script>
+     
+var count=0;
+function showDatainTable(){
+   count++;
+   var taskType=document.querySelector("#taskType").value;
+   var subject=document.querySelector("#subject").value;
+   var assign=document.querySelector("#assign").value;
+   var details=document.querySelector("#details").value;
+   var start=document.querySelector("#start").value;
+   var end=document.querySelector("#end").value;
+   var remind=document.querySelector("#remind").value;
+
+
+
+       var tr = document.createElement("tr");
+       var td1 = document.createElement("td");
+       var td2 = document.createElement("td");
+       var td3 = document.createElement("td");
+       var td4 = document.createElement("td");
+       var td5 = document.createElement("td");
+       var td6 = document.createElement("td");
+
+       td1.textContent=count;
+       td2.textContent=subject;
+       td3.textContent=taskType;
+       td4.textContent=assign;
+       td5.textContent=end;
+       td6.textContent="Not Started";
+       
+
+      tr.append(td1,td2,td3,td4,td5,td6);
+
+      var cData=JSON.parse(localStorage.getItem("AddData"))||[];
+
+      var obj={
+       taskType,
+       end,
+      }
+      
+      
+    //  console.log(arr)
+      cData.push(obj);
+       localStorage.setItem("AddData",JSON.stringify(cData));
+       var d=JSON.parse(localStorage.getItem("AddData"));
+       console.log("data",d)
+       showdata(d)
+      
+      document.querySelector("tbody").append(tr)
+
+   //   ***********************************sorting*********************************************
+}
+
+function showdata(d){
+   //var d=JSON.parse(localStorage.getItem("AddData"))
+
+   document.querySelector("#alldata").innerText=""
+d.map((e)=>{
+   var telephon=document.querySelector("#telephon")
+   var main_div=document.createElement("div");
+main_div.setAttribute("class","main_div");
+var div1=document.createElement("div");
+div1.setAttribute("class","div1")
+var div2=document.createElement("div");
+div2.setAttribute("class","div2");
+
+
+
+var h2=document.createElement("p");
+h2.innerText=e.taskType;
+var span1=document.createElement("span");
+var span2=document.createElement("span");
+var br=document.createElement("br");
+var date=document.createElement("span");
+var time=document.createElement("span");
+
+date.innerText=e.end;
+time.innerText="05:00 AM"
+
+
+
+if(e.taskType == "Inform Product Feature"){
+   span1.innerText="You contacted with";
+   span2.innerText="Charles Gomez";
+   div1.innerHTML=`<i class="bi bi-telephone-fill" ></i>`
+  
+   
+}
+else {
+   span1.innerText="You added TO DO task with";
+   span2.innerText="Arun Var";
+   div1.innerHTML=`<i class="bi bi-check-circle-fill"></i>`
+   
+}
+
+
+
+
+div2.append(h2,span1,span2,br,date,time);
+
+
+main_div.append(div1,div2);
+document.querySelector("#alldata").append(main_div);
+})
+
+
+}
+
+
+
+
+//   localStorage.setItem("AddData",JSON.stringify(cData));
+// document.querySelector("#ass").addEventListener("onclick",assending);
+var d=JSON.parse(localStorage.getItem("AddData"))
+showdata(d);
+// console.log(d,"date")
+d.sort( function (a,b){
+   return a.end - b.end
+} )
+console.log(d,"sorting method")
+// function myFunc(){
+// var x=document.getElementById("sort").value;
+// if(x=="ass"){
+//     d.sort((a,b)=>{
+//         var dateA = new Date(a.date), dateB = new Date(b.date)
+// 	return dateA - dateB
+//     })
+//     console.log(d)
+//    // showdata(d)
+// }
+// }
+</script>
