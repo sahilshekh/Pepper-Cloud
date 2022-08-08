@@ -26,10 +26,13 @@ You can see deployed link here :- https://pepper-cloud-lac.vercel.app/
 
 - User can use the form easily i using DOM application for smoothly working.
 
-![Screenshot (2131)](https://user-images.githubusercontent.com/95908470/183346841-a3f445e2-c179-4201-8091-8de5add9d4e2.png)
-
 ![Screenshot (2132)](https://user-images.githubusercontent.com/95908470/183346935-f1c7a2fe-4df9-493f-b7bb-0cd50a3ffe42.png)
 
+![Screenshot (2133)](https://user-images.githubusercontent.com/95908470/183347609-0213d56e-3ae6-4c60-a8b3-8500cb12176d.png)
+
+![Screenshot (2134)](https://user-images.githubusercontent.com/95908470/183347770-ae4e17e7-6fe0-46ae-b257-5aebd75d7f3d.png)
+
+![Screenshot (2131)](https://user-images.githubusercontent.com/95908470/183346841-a3f445e2-c179-4201-8091-8de5add9d4e2.png)
 
 ## [Getting Started]
 
