@@ -24,7 +24,7 @@ You can see deployed link here :- https://pepper-cloud-lac.vercel.app/
 
 ## Features:
 
-- User can use the form easily i using DOM application for smoothly working.
+- User can use the form easily i am using DOM in application for smoothly working.
 
 ![Screenshot (2132)](https://user-images.githubusercontent.com/95908470/183346935-f1c7a2fe-4df9-493f-b7bb-0cd50a3ffe42.png)
 
